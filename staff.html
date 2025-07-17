@@ -2,67 +2,66 @@
          .navbar-brand {
              font-size: 2rem;
              font-weight: 800;
--            color: var(--primary) !important;
-+            display: flex;
-+            align-items: center;
-+            gap: 12px;
-+            color: var(--primary) !important;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--primary) !important;
              letter-spacing: -1px;
-+            text-decoration: none;
-+        }
-+        
-+        .navbar-brand:hover {
-+            color: var(--primary) !important;
-+        }
-+        
-+        .logo-image {
-+            height: 40px;
-+            width: auto;
-+            object-fit: contain;
-+            transition: transform 0.3s ease;
-+        }
-+        
-+        .navbar-brand:hover .logo-image {
-+            transform: scale(1.05);
+            text-decoration: none;
+        }
+        
+        .navbar-brand:hover {
+            color: var(--primary) !important;
+        }
+        
+        .logo-image {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+        
+        .navbar-brand:hover .logo-image {
+            transform: scale(1.05);
          }
          
          .navbar-brand span {
 @@ .. @@
-     <nav class="navbar">
-         <div class="container">
--            <a href="index.html" class="navbar-brand">WAZA<span>NIN</span></a>
-+            <a href="index.html" class="navbar-brand">
-+                <img src="assets/images/logo waz.jpg" alt="Wazanin Logo" class="logo-image">
-+                <span>WAZA<span>NIN</span></span>
-+            </a>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/images/logo waz.jpg" alt="Wazanin Logo" class="logo-image">
+                <span>WAZA<span>NIN</span></span>
+            </a>
+            </a>
              <div class="nav-menu" id="nav-menu">
 @@ .. @@
-        .footer-brand {
-            font-size: 1.8rem;
-            font-weight: 800;
-+           display: flex;
-+           align-items: center;
-+           gap: 10px;
-            color: white;
-            margin-bottom: 1rem;
-        }
-        
-+       .footer-logo {
-+           height: 35px;
-+           width: auto;
-+           object-fit: contain;
-+           filter: brightness(0) invert(1);
-+       }
-+       
-        .footer-brand span {
-            color: var(--secondary);
-        }
+       .footer-brand {
+          font-size: 1.8rem;
+          font-weight: 800;
+         display: flex;
+         align-items: center;
+         gap: 10px;
+          color: white;
+          margin-bottom: 1rem;
+      }
+      
+     .footer-logo {
+         height: 35px;
+         width: auto;
+         object-fit: contain;
+         filter: brightness(0) invert(1);
+     }
+     
+      .footer-brand span {
+          color: var(--secondary);
+      }
 @@ .. @@
-            <div class="footer-content">
-                <div class="footer-section">
--                   <div class="footer-brand">WAZA<span>NIN</span></div>
-+                   <div class="footer-brand">
-+                       <img src="assets/images/logo waz.jpg" alt="Wazanin Logo" class="footer-logo">
-+                       <span>WAZA<span>NIN</span></span>
-+                   </div>
+           <div class="footer-content">
+               <div class="footer-section">
+                 <div class="footer-brand">
+                     <img src="assets/images/logo waz.jpg" alt="Wazanin Logo" class="footer-logo">
+                     <span>WAZA<span>NIN</span></span>
+                 </div>
+                   </div>
                     <p>Connecting Ethiopian talent with Saudi employment opportunities through ethical recruitment practices and comprehensive support services.</p>
