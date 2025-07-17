@@ -1,0 +1,46 @@
+@@ .. @@
+         .navbar-brand {
+             font-size: 2rem;
+             font-weight: 800;
+-            color: var(--primary) !important;
++            display: flex;
++            align-items: center;
++            gap: 12px;
++            color: var(--primary) !important;
+             letter-spacing: -1px;
++            text-decoration: none;
++        }
++        
++        .navbar-brand:hover {
++            color: var(--primary) !important;
++        }
++        
++        .logo-image {
++            height: 40px;
++            width: auto;
++            object-fit: contain;
++            transition: transform 0.3s ease;
++        }
++        
++        .navbar-brand:hover .logo-image {
++            transform: scale(1.05);
+         }
+         
+         .navbar-brand span {
+@@ .. @@
+     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+         <div class="container">
+-            <a class="navbar-brand" href="#home">WAZA<span>NIN</span></a>
++            <a class="navbar-brand" href="#home">
++                <img src="assets/images/logo waz.jpg" alt="Wazanin Logo" class="logo-image">
++                <span>WAZA<span>NIN</span></span>
++            </a>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+@@ .. @@
+                 <div class="col-lg-4">
+                     <h5>About Wazanin</h5>
++                    <div class="d-flex align-items-center mb-3">
++                        <img src="assets/images/logo waz.jpg" alt="Wazanin Logo" style="height: 35px; width: auto; object-fit: contain; filter: brightness(0) invert(1); margin-right: 10px;">
++                        <span style="font-size: 1.5rem; font-weight: 700; color: white;">WAZA<span style="color: var(--secondary);">NIN</span></span>
++                    </div>
+                     <p class="mb-4">Connecting Ethiopian talent with Saudi employment opportunities through ethical recruitment practices and comprehensive support services. Your trusted partner in international career development.</p>
