@@ -1,0 +1,214 @@
+@@ .. @@
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--primary) !important;
+            letter-spacing: -1px;
+            text-decoration: none;
+        }
+        
+        .navbar-brand:hover {
+            color: var(--primary) !important;
+        }
+        
+        /* WAZANIN Logo Styles */
+        .wazanin-logo {
+            height: 80px;
+            width: auto;
+            transition: all 0.3s ease;
+        }
+        
+        /* Responsive logo sizing */
+        @media (max-width: 768px) {
+            .wazanin-logo {
+                height: 60px;
+            }
+        }
+        
+        /* Footer logo sizing */
+        .footer .wazanin-logo {
+            height: 40px;
+        }
+        
+        /* Logo hover effects */
+        .navbar-brand:hover .wazanin-logo {
+            transform: scale(1.05);
+            filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
+        }
+        
+        .footer .navbar-brand:hover .wazanin-logo {
+            transform: scale(1.03);
+        }
+        
+        /* Dark background monochrome logo */
+        .bg-dark .wazanin-logo .logo-globe,
+        .bg-dark .wazanin-logo .connection-dots,
+        .bg-dark .wazanin-logo .logo-text {
+            display: none;
+        }
+        
+        .bg-dark .wazanin-logo .monochrome-version {
+            display: block !important;
+            color: #ffffff;
+        }
+        
+        .logo-image {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+        
+        .navbar-brand:hover .logo-image {
+            transform: scale(1.05);
+        }
+        
+        .navbar-brand span {
+@@ .. @@
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="bootstrap-index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" class="wazanin-logo" alt="WAZANIN — Connecting Opportunities Worldwide">
+                   <defs>
+                     <!-- Color gradients for the globe -->
+                     <linearGradient id="blueGradientStaff" x1="0%" y1="0%" x2="100%" y2="100%">
+                       <stop offset="0%" style="stop-color:#1e6091;stop-opacity:1" />
+                       <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+                     </linearGradient>
+                     
+                     <linearGradient id="greenGradientStaff" x1="0%" y1="0%" x2="100%" y2="100%">
+                       <stop offset="0%" style="stop-color:#27ae60;stop-opacity:1" />
+                       <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:1" />
+                     </linearGradient>
+                     
+                     <linearGradient id="yellowGradientStaff" x1="0%" y1="0%" x2="100%" y2="100%">
+                       <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+                       <stop offset="100%" style="stop-color:#f1c40f;stop-opacity:1" />
+                     </linearGradient>
+                     
+                     <linearGradient id="redGradientStaff" x1="0%" y1="0%" x2="100%" y2="100%">
+                       <stop offset="0%" style="stop-color:#c0392b;stop-opacity:1" />
+                       <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:1" />
+                     </linearGradient>
+                   </defs>
+                   
+                   <!-- Globe/Earth representation -->
+                   <g class="logo-globe">
+                     <!-- Blue section (top) -->
+                     <path d="M 15 15 Q 25 10 35 15 Q 30 20 25 25 Q 20 20 15 15 Z" fill="url(#blueGradientStaff)" class="globe-blue"/>
+                     
+                     <!-- Green section (right) -->
+                     <path d="M 35 15 Q 45 20 40 30 Q 35 25 30 30 Q 32 22 35 15 Z" fill="url(#greenGradientStaff)" class="globe-green"/>
+                     
+                     <!-- Yellow section (bottom) -->
+                     <path d="M 30 30 Q 25 40 15 35 Q 20 30 25 25 Q 28 28 30 30 Z" fill="url(#yellowGradientStaff)" class="globe-yellow"/>
+                     
+                     <!-- Red section (left) -->
+                     <path d="M 15 35 Q 10 25 15 15 Q 18 22 20 30 Q 17 32 15 35 Z" fill="url(#redGradientStaff)" class="globe-red"/>
+                     
+                     <!-- Ethiopian star in center -->
+                     <circle cx="25" cy="25" r="8" fill="#1e6091" class="star-bg"/>
+                     <path d="M 25 19 L 27 24 L 32 24 L 28 27 L 29 32 L 25 29 L 21 32 L 22 27 L 18 24 L 23 24 Z" fill="#f1c40f" class="ethiopian-star"/>
+                   </g>
+                   
+                   <!-- Connection dots -->
+                   <g class="connection-dots">
+                     <circle cx="48" cy="20" r="2" fill="#27ae60" class="dot-1"/>
+                     <circle cx="52" cy="17" r="1.5" fill="#f39c12" class="dot-2"/>
+                     <circle cx="56" cy="23" r="2.5" fill="#e74c3c" class="dot-3"/>
+                     <circle cx="48" cy="28" r="1.8" fill="#2980b9" class="dot-4"/>
+                     <circle cx="54" cy="31" r="1.2" fill="#27ae60" class="dot-5"/>
+                   </g>
+                   
+                   <!-- WAZANIN text -->
+                   <text x="70" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="#2c3e50" class="logo-text">
+                     WAZA<tspan fill="#e74c3c">NIN</tspan>
+                   </text>
+                   
+                   <!-- Monochrome versions (hidden by default) -->
+                   <g class="monochrome-version" style="display: none;">
+                     <!-- Monochrome globe -->
+                     <circle cx="25" cy="25" r="15" fill="none" stroke="currentColor" stroke-width="2"/>
+                     <path d="M 15 15 Q 25 10 35 15 Q 30 20 25 25 Q 20 20 15 15 Z" fill="currentColor" opacity="0.3"/>
+                     <path d="M 35 15 Q 45 20 40 30 Q 35 25 30 30 Q 32 22 35 15 Z" fill="currentColor" opacity="0.5"/>
+                     <path d="M 30 30 Q 25 40 15 35 Q 20 30 25 25 Q 28 28 30 30 Z" fill="currentColor" opacity="0.4"/>
+                     <path d="M 15 35 Q 10 25 15 15 Q 18 22 20 30 Q 17 32 15 35 Z" fill="currentColor" opacity="0.6"/>
+                     
+                     <!-- Monochrome star -->
+                     <circle cx="25" cy="25" r="8" fill="currentColor" opacity="0.8"/>
+                     <path d="M 25 19 L 27 24 L 32 24 L 28 27 L 29 32 L 25 29 L 21 32 L 22 27 L 18 24 L 23 24 Z" fill="white"/>
+                     
+                     <!-- Monochrome dots -->
+                     <circle cx="48" cy="20" r="2" fill="currentColor" opacity="0.7"/>
+                     <circle cx="52" cy="17" r="1.5" fill="currentColor" opacity="0.5"/>
+                     <circle cx="56" cy="23" r="2.5" fill="currentColor" opacity="0.8"/>
+                     <circle cx="48" cy="28" r="1.8" fill="currentColor" opacity="0.6"/>
+                     <circle cx="54" cy="31" r="1.2" fill="currentColor" opacity="0.4"/>
+                     
+                     <!-- Monochrome text -->
+                     <text x="70" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="currentColor">
+                       WAZANIN
+                     </text>
+                   </g>
+                 </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+@@ .. @@
+                <div class="col-lg-4">
+                    <h5>About Wazanin</h5>
+                    <div class="d-flex align-items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" class="wazanin-logo" style="margin-right: 10px;" alt="WAZANIN — Connecting Opportunities Worldwide">
+                          <defs>
+                            <!-- Color gradients for the globe -->
+                            <linearGradient id="blueGradientStaffFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                              <stop offset="0%" style="stop-color:#1e6091;stop-opacity:1" />
+                              <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+                            </linearGradient>
+                            
+                            <linearGradient id="greenGradientStaffFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                              <stop offset="0%" style="stop-color:#27ae60;stop-opacity:1" />
+                              <stop offset="100%" style="stop-color:#2ecc71;stop-opacity:1" />
+                            </linearGradient>
+                            
+                            <linearGradient id="yellowGradientStaffFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                              <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+                              <stop offset="100%" style="stop-color:#f1c40f;stop-opacity:1" />
+                            </linearGradient>
+                            
+                            <linearGradient id="redGradientStaffFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                              <stop offset="0%" style="stop-color:#c0392b;stop-opacity:1" />
+                              <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:1" />
+                            </linearGradient>
+                          </defs>
+                          
+                          <!-- Monochrome version for dark footer background -->
+                          <g class="monochrome-version">
+                            <!-- Monochrome globe -->
+                            <circle cx="25" cy="25" r="15" fill="none" stroke="white" stroke-width="2"/>
+                            <path d="M 15 15 Q 25 10 35 15 Q 30 20 25 25 Q 20 20 15 15 Z" fill="white" opacity="0.3"/>
+                            <path d="M 35 15 Q 45 20 40 30 Q 35 25 30 30 Q 32 22 35 15 Z" fill="white" opacity="0.5"/>
+                            <path d="M 30 30 Q 25 40 15 35 Q 20 30 25 25 Q 28 28 30 30 Z" fill="white" opacity="0.4"/>
+                            <path d="M 15 35 Q 10 25 15 15 Q 18 22 20 30 Q 17 32 15 35 Z" fill="white" opacity="0.6"/>
+                            
+                            <!-- Monochrome star -->
+                            <circle cx="25" cy="25" r="8" fill="white" opacity="0.8"/>
+                            <path d="M 25 19 L 27 24 L 32 24 L 28 27 L 29 32 L 25 29 L 21 32 L 22 27 L 18 24 L 23 24 Z" fill="#2c3e50"/>
+                            
+                            <!-- Monochrome dots -->
+                            <circle cx="48" cy="20" r="2" fill="white" opacity="0.7"/>
+                            <circle cx="52" cy="17" r="1.5" fill="white" opacity="0.5"/>
+                            <circle cx="56" cy="23" r="2.5" fill="white" opacity="0.8"/>
+                            <circle cx="48" cy="28" r="1.8" fill="white" opacity="0.6"/>
+                            <circle cx="54" cy="31" r="1.2" fill="white" opacity="0.4"/>
+                            
+                            <!-- Monochrome text -->
+                            <text x="70" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="800" fill="white">
+                              WAZANIN
+                            </text>
+                          </g>
+                        </svg>
+                    </div>
+                    <p class="mb-4">Connecting Ethiopian talent with Saudi employment opportunities through ethical recruitment practices and comprehensive support services. Your trusted partner in international career development.</p>
