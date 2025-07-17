@@ -1,0 +1,23 @@
+{
+  "name": "wazanin-recruitment-website",
+  "version": "1.0.0",
+  "description": "A professional website for Wazanin, a recruitment agency specializing in connecting Ethiopian talent with Saudi employment opportunities.",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'No build process needed - this is a static website' && exit 0",
+    "start": "echo 'Open index.html in your browser or use a static file server'",
+    "dev": "echo 'Open index.html in your browser or use a static file server'"
+  },
+  "keywords": [
+    "recruitment",
+    "agency",
+    "ethiopia",
+    "saudi",
+    "employment",
+    "static-website"
+  ],
+  "author": "Wazanin Recruitment Agency",
+  "license": "UNLICENSED",
+  "private": true,
+  "type": "module"
+}
